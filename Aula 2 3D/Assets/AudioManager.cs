@@ -2,9 +2,10 @@ using UnityEngine;
 
 public class AudioManager : MonoBehaviour
 {
+    #region Singleton
     public static AudioManager instance;
     
-   priva void Awake()
+   private void Awake()
    {
        if (instance == null)
        {
@@ -16,4 +17,5 @@ public class AudioManager : MonoBehaviour
            Destroy(gameObject);
        }
    } 
+   #endregion
 }
